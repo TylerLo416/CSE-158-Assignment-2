@@ -25,7 +25,7 @@ Lastly, numerous averaged are calcualted based on the training data. These inclu
                                                                                                                                                                                                                                                                                                                                                                                                                                   
 users and books sets are created to check if books and users were in the training data. It determines how its vector is created.                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
-For sentence in the training and testing data, its vector is created in the following way:
+For each sentence in the training and testing data, a vector is created in the following way:
 
 - 1: bias term                                                                                                                                                                                                                                                                                                                                                                                                                                 
 - book_pop: book popularity, based off of book_popularity list
