@@ -51,12 +51,27 @@ Train LinearRegression model with c=100 and balanced class weight. Then get the 
 
 As of now, the best model uses the variables [1, book_pop, pop_by_freq, user_rank, user_rating, temporal_feature, ct_book_spoilers, ct_user_spoilers, avg_rating_item, avg_rating_user] with a c of 100. This achieves the following:
 
-accuracy:  0.9919566644780039
-tp:  24 tn:  6019 fp:  43 fn:  6
-F1:  0.4948453608247423
-AUC: 0.9931430770922687
-First spoiler position:  13
-Last spoiler position:  341
-Average spoiler position:  62.13333333333333
+- accuracy:  0.9919566644780039
+- tp:  24 tn:  6019 fp:  43 fn:  6
+- F1:  0.4948453608247423
+- AUC: 0.9931430770922687
+- First spoiler position:  13
+- Last spoiler position:  341
+- Average spoiler position:  62.13333333333333
+
+## Goal
+
+The goal is for the model to achieve the following:
+
+- accuracy:  0.9
+- F1:  0.65
+- AUC: 0.75
+
+# To-Do (for the Model)
+
+- Test data on Kaggle, LCS datasets, if possible
+- Improve model in terms of evaluation metrics
+- Figure out how much of data can be used as **USING ALL OF THE DATA, EVEN JUST THE FIRST 150K ENTRIES, CRASHES MY COMPUTER AFTER LIKE 5 HOURS OF BERT EMBEDDINGS**.
+
                                                                                                                                                                                                                                                                                                                                                                                                                                   
                                                                                                                                                                                                                                                                                                                                                                                                                                   
