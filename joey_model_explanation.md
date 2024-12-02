@@ -36,11 +36,12 @@ For each sentence in the training and testing data, a vector is created in the f
 - ct_book_spoilers: number of spoilers for the book
 - ct_user_spoilers: number of spoilers user has made
 - avg_rating_item: average rating given to book in training
-- avg_rating_user: average rating user has given out                                                                                                                                                                                                                                                                                                                                                                                                                             
+- avg_rating_user: average rating user has given out
+
+
+Then, BERT embedding information is added to the end of the vector, all 768 values.                                                                                                                                                                                                                                                                                    
                                                                                                                                                                                                                                                                                                                                                                                                                                   
 (considering adding another temporal of position of sentence compared to others, adding book_rank, and messing with using mean/other default answers for books/users not in training data lists -> since they not there sometimes, cannot calculcate some things for them)
-
-Then, BERT embedding information is added to the end, all 768 values. This created our vectors.
 
 
 ### Model
