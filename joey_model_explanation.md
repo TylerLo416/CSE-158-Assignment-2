@@ -5,7 +5,7 @@ For training data, the goal is to have 50% of sentences to be non-spoilers (0) a
 
 For testing data, we take every sentence.
 
-Then, we collect the BERT CLS embedding for each sentence. This takes a while to construct. Not entirely sure what it collects beyond token sentiment, but its output size is 768 for each sentence (padding shorter sentences).
+Then, we collect the BERT CLS embedding for each sentence. This takes a while to construct. Not entirely sure what it collects beyond token sentiment, but its output size is 768 for each sentence (padding shorter sentences). **These are saved in a separate file so that you can call the embeddings at later times without needing to run this code again (as it takes very, very long.**
 
 Then, we create common relationship-focused dictionaries: usersPerItem, itemsPerUser, reviewsPerItem (sentence spoiler label), reviewsPerUser (sentence spoiler label), ratingsPerUser, ratingsPerItem. On top of this, I calculate book and user popularity by how common they show up in the training data. userIDs and itemIDs are collected to create a sparse matrix of interactions in the dataset between books and users (and for other later reasons).
                                                                                                                                                                                                                                                                                                                                                                                                                                   
