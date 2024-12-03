@@ -1,5 +1,7 @@
 ## Model Explanation
 
+### Could only operate on like 70k/1.38M (5%) entries due to BERT-related memory constraints
+
 ## Data Used **NEW**
 
 We used 68000 entries to train our data and 1200 to test. This difference, while appearing large, is reduced by how we use the data: for each training entry, there are constraints for how we use it so that 50% of training data is spoilers and the other half non-spoilers. These constraints are not in place for testing data, where we just use all of the sentences. With this in mind, training data comes out to 51000 sentences and 15000 for testing (testing is ~20% of total data).
