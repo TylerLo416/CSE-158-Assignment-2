@@ -40,6 +40,7 @@ For each sentence in the training and testing data, a vector is created in the f
 - ct_book_spoilers: number of spoilers for the book
 - ct_user_spoilers: number of spoilers user has made
 - avg_rating_item: average rating given to book in training
+- rating_marker: '1' if the rating the user gave the book was a 1, '-1' if the rating was 3, else 0. (distribution of books by spoiler, nonspoiler, 20% higher 1's for spoilers, 20% higher 3's for non-spoilers).
 
 
 Then, BERT CLS embedding information is added to the end of the vector, all 768 values.                                                                                                                                                                                           
