@@ -1,4 +1,4 @@
-### Could only operate on like 21k/570k entries due to BERT limit constraints
+### Could only operate on like 21k/570k entries due to BERT-related memory constraints
 
 - Training Info: TP  2941  TN  2777  FP  1912  FN  2074
 - accuracy:  0.6706666666666666
