@@ -55,6 +55,13 @@ As of now, the best model uses the variables [1, pop_by_freq, book_rank, length,
 - F1:  0.32841691248770893
 - AUC: 0.8961211497617502
 
+I ordered the scores assigned by the function, highest to lowest. Below descirbes different stats on the positions of spoilers on the list (out of 15.5K entries in test data):
+
+- First spoiler position:  75 (top 0.5%)
+- Last spoiler position:  12104 (top 78%)
+- Average spoiler position:  1805.1797520661157 (top 12%)
+
+
 ## Goal Comparison
 
 We came short of our goal due to limiting the data we used (as a result of space constraints caused by BERT model taking up so much space):
@@ -62,12 +69,5 @@ We came short of our goal due to limiting the data we used (as a result of space
 - accuracy:  0.9
 - F1:  0.65
 - AUC: 0.75
-
-I ordered the scores assigned by the function to rows, highest to lowest. Below descirbes different stats on the positions of spoilers on the list (out of 15.5K entries in test data):
-
-- First spoiler position:  75 (top 0.5%)
-- Last spoiler position:  12104 (top 78%)
-- Average spoiler position:  1805.1797520661157 (top 12%)
-
                                                                                                                                                                                                                                                                                                                                                                                                                                   
                                                                                                                                                                                                                                                                                                                                                                                                                                   
