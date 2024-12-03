@@ -53,10 +53,10 @@ Train LinearRegression model with c=1 and balanced class weight. Then get the de
 
 As of now, the best model uses the variables [1, pop_by_freq, book_rank, length, ct_book_spoilers, ct_user_spoilers, avg_rating_item] with a c of 1. This achieves the following:
 
-- accuracy:  0.9118937048503611
-- tp:  334 tn:  13804 fp:  1216 fn:  150
-- F1:  0.32841691248770893
-- AUC: 0.8961211497617502
+- accuracy:  0.929955
+- tp:  349 tn:  13819 fp:  1201 fn:  135
+- F1:  0.34316617502458213
+- AUC: 0.8909364648787843
 
 I ordered the scores assigned by the function, highest to lowest. Below descirbes different stats on the positions of spoilers on the list (out of 15.5K entries in test data):
 
